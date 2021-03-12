@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap%27');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400&display=swap%27');
 body{
-    background-color: rgb(137, 81, 201);
+    background-image: linear-gradient(to right, #5d3dcc,#9c7be6);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -10,34 +12,44 @@ body{
     grid-template-columns: 60% 40%;
     grid-template-areas: "imagem login";
     border-radius: 10px;
-    box-shadow: -10px -10px yellow;
     width: 1200px;
     height: 700px;
 }
 .login{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: white;
     grid-area: login;
     border: transparent 5px;
     border-radius: 0px 10px 10px 0px;
+    box-shadow:  5px 5px 3em #5a3dbc;
+    font-family: 'Fira Sans';
 }
 .imagem{
-    background-image: linear-gradient(to right top, rgb(137, 81, 201),rgb(168, 114, 231));
+    color: white;
+    background-image: url("landscape-5547401_960_720.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
     grid-area: imagem;
     border: transparent 5px;
     border-radius: 10px 0px 0px 10px;
-    box-shadow: yellow;
+    box-shadow:  -5px 5px 3em #5a3dbc;
 }
 .conteudo input{
-    background-color: #034078;
+    background-color: white;
     box-shadow: none;
     outline: none;
-    border: transparent;
+    border: none;
+    border-bottom: solid 1.5px #ddd;
     width: 200px;
     height: 10px;
-    border-radius: 30px;
-    padding: 20px;
-    margin: 5px 0px;
-    color:white;
+    padding: 5px 10px 5px 10px;
+    margin: 10px 10px;
+    font-size: 15px;
+    color:#ddd;
     font-family: 'PT Sans', sans-serif;
 }
 
@@ -46,8 +58,8 @@ button{
     width: 150px;
     height: 40px;
     text-align:center;
-    border-radius: 30px;
-    background-color:#034078;
+    border-radius: 5px;
+    background-color:#5a3dbc;
     border-color:transparent;
     font-family: 'PT Sans';
     color:  #FEFCFB;
@@ -55,8 +67,7 @@ button{
 
 }
 button:hover{
-    background-color: #1282A2;
-    width: 180px;
+    background-color: #5a4cbc;
 }
 
 input::placeholder{
@@ -65,4 +76,47 @@ input::placeholder{
 }
 body,html{
     height: 100%;
+}
+.log{
+    border: solid 1px #efe;
+    border-radius: 5px;
+    padding: 30px 20px;
+    margin-top: 25px;
+    font-size: 20px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.destaque{
+    color: blueviolet;
+}
+.texto{
+    align-self: flex-start;
+    font-size: 15px;
+    margin: 5px 0px;
+    color: #ddd;
+}
+span{
+    margin-bottom: 25px;
+}
+.forget{
+    padding: 10px 0px;
+    align-self: flex-end;
+    font-size: 15px;
+}
+.forget:hover{
+    color: #5d3dcc;
+}
+.title{
+    margin: 0;
+    padding: 0;
+    align-self: flex-start;
+    font-size: 25px;
+}
+.titlex{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    width: 350px;
+    padding-bottom: 50px;
 }
