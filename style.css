@@ -1,14 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
 body{
-    background-color: #0A1128;
+    background-color: rgb(137, 81, 201);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .conteudo{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-areas: "imagem login";
+    border-radius: 10px;
+    box-shadow: -10px -10px yellow;
+    width: 1200px;
+    height: 700px;
+}
+.login{
+    background-color: white;
+    grid-area: login;
+    border: transparent 5px;
+    border-radius: 0px 10px 10px 0px;
+}
+.imagem{
+    background-image: linear-gradient(to right top, rgb(137, 81, 201),rgb(168, 114, 231));
+    grid-area: imagem;
+    border: transparent 5px;
+    border-radius: 10px 0px 0px 10px;
+    box-shadow: yellow;
 }
 .conteudo input{
     background-color: #034078;
